@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "day": "node ./scripts/day.js",
-    "test": "node --test"
+    "test": "node --test",
+    "readme": "node --test | node ./scripts/readme.js"
   },
   "devDependencies": {
     "eslint": "^8.19.0",
