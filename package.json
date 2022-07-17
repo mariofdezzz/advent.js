@@ -8,8 +8,9 @@
   },
   "scripts": {
     "day": "node ./scripts/day.js",
-    "test": "node --test",
-    "readme": "node --test | node ./scripts/readme.js",
+    "test": "npm run test:raw | node ./scripts/test.js",
+    "test:raw": "node --test src",
+    "readme": "npm run test:raw | node ./scripts/readme.js",
     "lint": "eslint --ext .js .",
     "prepare": "husky install"
   },

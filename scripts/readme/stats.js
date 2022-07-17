@@ -8,13 +8,17 @@ export default class Stats {
     const globals = this._tapInput.slice(lastItem - 7, lastItem)
 
     return {
-      total: globals[0].match(/\d+/)[0],
-      pass: globals[1].match(/\d+/)[0],
-      fail: globals[2].match(/\d+/)[0],
-      cancelled: globals[3].match(/\d+/)[0],
-      skipped: globals[4].match(/\d+/)[0],
-      todo: globals[5].match(/\d+/)[0],
-      duration: globals[6].match(/\d+(\.\d+)?/)[0],
+      total: this._getResult(globals[0]),
+      pass: this._getResult(globals[1]),
+      fail: this._getResult(globals[2]),
+      cancelled: this._getResult(globals[3]),
+      skipped: this._getResult(globals[4]),
+      todo: this._getResult(globals[5]),
+      duration: this._getResult(globals[6]),
     }
+  }
+
+  _getResult(line) {
+    return parseFloat(line.match(/\d+(\.\d+)?/)[0])
   }
 }
