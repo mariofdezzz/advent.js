@@ -3,6 +3,9 @@
   "description": "",
   "license": "MIT",
   "type": "module",
+  "engines": {
+    "node": "<=18"
+  },
   "scripts": {
     "day": "node ./scripts/day.js",
     "test": "node --test",
