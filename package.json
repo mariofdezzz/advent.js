@@ -9,7 +9,9 @@
   "scripts": {
     "day": "node ./scripts/day.js",
     "test": "node --test",
-    "readme": "node --test | node ./scripts/readme.js"
+    "readme": "node --test | node ./scripts/readme.js",
+    "lint": "eslint --ext .js .",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "eslint": "^8.19.0",
@@ -18,6 +20,7 @@
     "prettier": "^2.7.1"
   },
   "dependencies": {
+    "husky": "^8.0.1",
     "mustache": "^4.2.0"
   }
 }
