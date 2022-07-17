@@ -1,23 +1,9 @@
-import { createInterface } from 'readline'
+import generateReadme from './readme/generate.js'
+import Stats from './readme/stats.js'
+import StdIn from './readme/stdin.js'
 
-const buffer = []
+const stdin = await new StdIn().read()
 
-var readline = createInterface({
-  input: process.stdin,
-  output: process.stdout,
-  terminal: false,
-})
+const stats = new Stats(stdin)
 
-readline.on('line', function (line) {
-  if (
-    /# tests \d+/.test(line) ||
-    /# pass \d+/.test(line) ||
-    /# fail \d+/.test(line)
-  )
-    buffer.push('🎉 ' + line.match(/\w+ \d+/i)[0])
-  // console.log('🎉 ' + line.match(/\w+ \d+/i)[0])
-})
-
-readline.on('close', function () {
-  console.log(buffer.join('\n'))
-})
+generateReadme(stats.getGlobal())
