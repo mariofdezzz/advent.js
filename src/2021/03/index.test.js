@@ -1,6 +1,6 @@
 import { strictEqual } from 'node:assert'
 import { describe, it } from 'node:test'
-import isValid from '../../src/2021/03.js'
+import isValid from './index.js'
 
 describe('2021/01', () => {
   it('Ejemplo 01', () => {
