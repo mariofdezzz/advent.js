@@ -1,8 +1,23 @@
-import { writeFileSync } from 'fs'
+import { mkdirSync, writeFileSync } from 'fs'
 import { join } from 'path'
 
-writeFileSync(join(process.cwd(), 'src', '2021', `${process.argv[2]}.js`), '')
+const testTemplate = `import { deepStrictEqual } from 'node:assert'
+import { describe, it } from 'node:test'
+`
+
+mkdirSync(join(process.cwd(), 'src', '2021', process.argv[2]), {
+  recursive: true,
+})
+
 writeFileSync(
-  join(process.cwd(), 'test', '2021', `${process.argv[2]}.test.js`),
+  join(process.cwd(), 'src', '2021', process.argv[2], 'index.js'),
+  ''
+)
+writeFileSync(
+  join(process.cwd(), 'src', '2021', process.argv[2], 'index.test.js'),
+  testTemplate
+)
+writeFileSync(
+  join(process.cwd(), 'src', '2021', process.argv[2], 'README.md'),
   ''
 )
