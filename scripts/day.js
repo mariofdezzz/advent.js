@@ -3,6 +3,12 @@ import { join } from 'path'
 
 const testTemplate = `import { deepStrictEqual } from 'node:assert'
 import { describe, it } from 'node:test'
+
+describe('2021/01', () => {
+  it('Ejemplo 01', () => {
+    
+  })
+})
 `
 
 mkdirSync(join(process.cwd(), 'src', '2021', process.argv[2]), {
