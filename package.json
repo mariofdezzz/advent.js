@@ -13,5 +13,8 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "mustache": "^4.2.0"
   }
 }
