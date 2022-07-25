@@ -14,5 +14,5 @@
 
 Year | Status 
 ---- | :----- 
-2021 | [![pepe](https://img.shields.io/badge/-✔_{{pass}}&#47;25_&#124;_✘_{{fail}}-brightgreen)](src/2021)
+2021 | [![Tests: {{pass}} passed, {{fail}} failed](https://img.shields.io/badge/-✔_{{pass}}&#47;25_&#124;_✘_{{fail}}-brightgreen)](src/2021)
 
