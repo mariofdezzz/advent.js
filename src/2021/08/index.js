@@ -6,7 +6,8 @@ export default function maxProfit(prices) {
     prices.shift()
 
     const max = prices.reduce(
-      (maxValue, value) => Math.max(maxValue, value - price),
+      (maxValue, value) =>
+        Math.max(maxValue, value - price),
       -1
     )
 

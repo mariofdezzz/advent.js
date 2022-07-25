@@ -5,9 +5,23 @@ const stdin = await new StdIn().read()
 
 const stats = new Stats(stdin)
 
-const { total, pass, fail, cancelled, skipped, todo, duration } =
-  stats.getGlobal()
+const {
+  total,
+  pass,
+  fail,
+  cancelled,
+  skipped,
+  todo,
+  duration,
+} = stats.getGlobal()
 
 if (fail > 0) console.error(stdin)
-console.table({ total, pass, fail, cancelled, skipped, todo })
+console.table({
+  total,
+  pass,
+  fail,
+  cancelled,
+  skipped,
+  todo,
+})
 console.log(`${duration} ms`)

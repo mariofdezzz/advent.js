@@ -11,19 +11,40 @@ describe('2021/01', () => {
 })
 `
 
-mkdirSync(join(process.cwd(), 'src', '2021', process.argv[2]), {
-  recursive: true,
-})
+mkdirSync(
+  join(process.cwd(), 'src', '2021', process.argv[2]),
+  {
+    recursive: true,
+  }
+)
 
 writeFileSync(
-  join(process.cwd(), 'src', '2021', process.argv[2], 'index.js'),
+  join(
+    process.cwd(),
+    'src',
+    '2021',
+    process.argv[2],
+    'index.js'
+  ),
   ''
 )
 writeFileSync(
-  join(process.cwd(), 'src', '2021', process.argv[2], 'index.test.js'),
+  join(
+    process.cwd(),
+    'src',
+    '2021',
+    process.argv[2],
+    'index.test.js'
+  ),
   testTemplate
 )
 writeFileSync(
-  join(process.cwd(), 'src', '2021', process.argv[2], 'README.md'),
+  join(
+    process.cwd(),
+    'src',
+    '2021',
+    process.argv[2],
+    'README.md'
+  ),
   ''
 )

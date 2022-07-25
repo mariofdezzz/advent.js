@@ -12,6 +12,7 @@
     "test:raw": "node --test src",
     "readme": "npm run test:raw | node ./scripts/readme.js",
     "lint": "eslint --ext .js .",
+    "format": "eslint --ext .js . --fix",
     "prepare": "husky install"
   },
   "devDependencies": {

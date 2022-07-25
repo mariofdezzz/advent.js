@@ -20,7 +20,10 @@ describe('2021/01', () => {
   })
 
   it('Ejemplo 05', () => {
-    strictEqual(missingReindeer([9, 2, 3, 5, 6, 4, 7, 0, 1]), 8)
+    strictEqual(
+      missingReindeer([9, 2, 3, 5, 6, 4, 7, 0, 1]),
+      8
+    )
   })
 
   it('Ejemplo 06', () => {

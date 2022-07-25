@@ -5,7 +5,10 @@ export default class Stats {
 
   getGlobal() {
     const lastItem = this._tapInput.length
-    const globals = this._tapInput.slice(lastItem - 7, lastItem)
+    const globals = this._tapInput.slice(
+      lastItem - 7,
+      lastItem
+    )
 
     return {
       total: this._getResult(globals[0]),

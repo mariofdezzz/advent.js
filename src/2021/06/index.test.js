@@ -16,6 +16,9 @@ describe('2021/01', () => {
   })
 
   it('Ejemplo 04', () => {
-    deepStrictEqual(sumPairs([0, 2, 2, 3, -1, 1, 5], 6), [1, 5])
+    deepStrictEqual(
+      sumPairs([0, 2, 2, 3, -1, 1, 5], 6),
+      [1, 5]
+    )
   })
 })

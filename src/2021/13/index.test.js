@@ -4,7 +4,12 @@ import wrapGifts from './index.js'
 
 describe('2021/01', () => {
   it('Ejemplo 01', () => {
-    deepStrictEqual(wrapGifts(['📷', '⚽️']), ['****', '*📷*', '*⚽️*', '****'])
+    deepStrictEqual(wrapGifts(['📷', '⚽️']), [
+      '****',
+      '*📷*',
+      '*⚽️*',
+      '****',
+    ])
   })
 
   it('Ejemplo 02', () => {
@@ -17,6 +22,10 @@ describe('2021/01', () => {
   })
 
   it('Ejemplo 03', () => {
-    deepStrictEqual(wrapGifts(['📷']), ['****', '*📷*', '****'])
+    deepStrictEqual(wrapGifts(['📷']), [
+      '****',
+      '*📷*',
+      '****',
+    ])
   })
 })

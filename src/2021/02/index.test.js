@@ -4,7 +4,8 @@ import listGifts from './index.js'
 
 describe('2021/01', () => {
   it('Ejemplo', () => {
-    const carta = 'bici coche balón _playstation bici coche peluche'
+    const carta =
+      'bici coche balón _playstation bici coche peluche'
 
     const regalos = listGifts(carta)
 

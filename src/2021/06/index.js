@@ -3,7 +3,9 @@ export default function sumPairs(numbers, result) {
     const number = numbers[0]
     numbers.shift()
 
-    const pair = numbers.find((value) => value + number === result)
+    const pair = numbers.find(
+      (value) => value + number === result
+    )
 
     if (pair) return [number, pair]
   }

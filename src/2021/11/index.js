@@ -13,7 +13,10 @@ export default function shouldBuyFidelity(times) {
 }
 
 function powSum(times) {
-  return (1 - Math.pow(disccount, times + 1)) / (1 - disccount) - 1
+  return (
+    (1 - Math.pow(disccount, times + 1)) / (1 - disccount) -
+    1
+  )
 }
 
 // === Simple version ===

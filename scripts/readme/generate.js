@@ -10,7 +10,14 @@ export default async function generate(stats) {
   const passRatio = Math.round((pass / total) * 100)
 
   const template = (
-    await readFile(join(process.cwd(), 'scripts', 'readme', 'README.template'))
+    await readFile(
+      join(
+        process.cwd(),
+        'scripts',
+        'readme',
+        'README.template'
+      )
+    )
   ).toString()
 
   const readme = Mustache.render(template, {
