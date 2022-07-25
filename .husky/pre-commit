@@ -3,4 +3,4 @@
 
 npm run lint 
 npm run readme
-git add .
+git add README.md
