@@ -27,8 +27,5 @@ async function test() {
   console.log('Skipped:', skipped)
   console.log('Todo:', todo)
   console.log('Duration:', `${duration} ms`)
-
-  // TODO: remove
-  console.log(stats.getTests())
 }
 test()
