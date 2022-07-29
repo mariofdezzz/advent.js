@@ -12,7 +12,29 @@
 
 ## 📆 Calendar
 
+### Overview
+
 Year | Status 
 ---- | :----- 
-2021 | [![Tests: {{pass}} passed, {{fail}} failed](https://img.shields.io/badge/-✔_{{pass}}&#47;25_&#124;_✘_{{fail}}-brightgreen)](src/2021)
+2021 | [![Tests: {{pass}} passed, {{fail}} failed](https://img.shields.io/badge/-✔_{{pass}}&#47;25_&#124;_✘_{{fail}}-{{ testBadgeColor }})](src/2021)
 
+
+### In detail
+
+<details>
+
+<summary>
+2021
+</summary>
+
+<p>
+
+Day  | Status | Duration
+---- | :----- | :-------
+{{ #days }}
+{{ day }} | [![{{ status }}](https://img.shields.io/badge/-{{ status }}-{{ statusBadgeColor }})](src/2021/{{ day }}) | {{ durationString }}
+{{ /days }}
+
+</p>
+
+</details>

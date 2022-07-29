@@ -1,20 +1,20 @@
 import { createInterface } from 'readline'
 
 export default class StdIn {
-  _buffer = []
+  private buffer: string[] = []
 
-  read() {
+  read(): Promise<string> {
     const readline = createInterface({
       input: process.stdin,
     })
 
     readline.on('line', (line) => {
-      this._buffer.push(line)
+      this.buffer.push(line)
     })
 
     return new Promise((resolve) => {
       readline.on('close', () => {
-        resolve(this._buffer.join('\n'))
+        resolve(this.buffer.join('\n'))
       })
     })
   }
