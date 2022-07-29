@@ -1,6 +1,9 @@
 {
   "plugins": ["eslint-plugin-prettier"],
-  "extends": ["eslint:recommended", "plugin:prettier/recommended"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended"
+  ],
   "ignorePatterns": ["node_modules"],
   "parserOptions": {
     "ecmaVersion": 2022,
@@ -9,5 +12,15 @@
   "env": {
     "node": true,
     "es6": true
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "parser": "@typescript-eslint/parser",
+      "plugins": ["@typescript-eslint"],
+      "rules": {
+        "@typescript-eslint/no-unused-vars": "error"
+      }
+    }
+  ]
 }
