@@ -1,15 +1,16 @@
 {
+  "display": "Node 18",
+
   "compilerOptions": {
-    "baseUrl": ".",
-    "module": "NodeNext",
-    "target": "ES2022",
-    "noImplicitAny": false,
-    "strictNullChecks": true,
-    "forceConsistentCasingInFileNames": true
+    "lib": ["es2022"],
+    "module": "commonjs",
+    "target": "es2022",
+
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node"
   },
-  "ts-node": {
-    "esm": true
-  },
-  "include": ["scripts"],
-  "exclude": ["node_modules"]
+  "include": ["scripts/**/*.ts"]
 }
