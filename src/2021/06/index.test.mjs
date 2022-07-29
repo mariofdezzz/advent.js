@@ -1,6 +1,6 @@
 import { deepStrictEqual } from 'node:assert'
 import { describe, it } from 'node:test'
-import sumPairs from './index.js'
+import sumPairs from './index.mjs'
 
 describe('2021/01', () => {
   it('Ejemplo 01', () => {

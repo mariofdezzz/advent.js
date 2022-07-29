@@ -1,6 +1,6 @@
 import { strictEqual } from 'node:assert'
 import { describe, it } from 'node:test'
-import pangram from './index.js'
+import pangram from './index.mjs'
 
 describe('2021/01', () => {
   it('Ejemplo 01', () => {

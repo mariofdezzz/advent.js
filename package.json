@@ -2,7 +2,6 @@
   "author": "Mario Ferrero Fernández",
   "description": "",
   "license": "MIT",
-  "type": "module",
   "engines": {
     "node": "<=18"
   },

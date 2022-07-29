@@ -1,6 +1,6 @@
 import { deepStrictEqual } from 'node:assert'
 import { describe, it } from 'node:test'
-import listGifts from './index.js'
+import listGifts from './index.mjs'
 
 describe('2021/01', () => {
   it('Ejemplo', () => {

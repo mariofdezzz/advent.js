@@ -1,6 +1,6 @@
 import { strictEqual } from 'node:assert'
 import { describe, it } from 'node:test'
-import decodeNumbers from './index.js'
+import decodeNumbers from './index.mjs'
 
 describe('2021/01', () => {
   it('Ejemplo 01', () => {

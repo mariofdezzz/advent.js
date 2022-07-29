@@ -1,6 +1,6 @@
 import { strictEqual } from 'node:assert'
 import { describe, it } from 'node:test'
-import canCarry from './index.js'
+import canCarry from './index.mjs'
 
 describe('2021/01', () => {
   it('Ejemplo 01', () => {

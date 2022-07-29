@@ -1,6 +1,6 @@
 import { strictEqual } from 'node:assert'
 import { describe, it } from 'node:test'
-import countPackages from './index.js'
+import countPackages from './index.mjs'
 
 describe('2021/01', () => {
   it('Ejemplo 01', () => {
