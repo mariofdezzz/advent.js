@@ -6,7 +6,7 @@
     "node": "<=18"
   },
   "scripts": {
-    "day": "node ./scripts/day.js",
+    "day": "ts-node scripts/day.ts",
     "test": "npm run test:raw | ts-node scripts/test.ts",
     "test:raw": "node --test src",
     "readme": "npm run test:raw | ts-node scripts/readme.ts",
